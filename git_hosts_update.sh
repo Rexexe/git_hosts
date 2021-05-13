@@ -1,9 +1,15 @@
 #!/bin/bash
 
-host_new=/tmp/host_new$$ #临时文件
-ref_host=/etc/hosts #目标hosts
+if [ ! $1 ]; then
+    host_new=/tmp/host_new$$ #临时文件
+    ref_host=/etc/hosts      #目标hosts
 
-sed '/#github/d' $ref_host > $host_new #删除目标hosts中标记的host，并复制到临时文件
+    sed '/#github/d' $ref_host >$host_new #删除目标hosts中标记的host，并复制到临时文件
+else
+    ref_host=./hosts
+    ref_host=./hosts
+    echo "" > $ref_host
+fi
 
 ipAddressFooter=ipaddress.com
 githubUrls=(
@@ -68,7 +74,7 @@ for i in ${githubUrls[@]}; do
     if [ ! $ip ]; then
         echo "$i is failed"
     else
-        printf "%-16s%-58s#github\n" $ip $i >> $host_new #格式化输出
+        printf "%-16s%-58s#github\n" $ip $i >>$host_new #格式化输出
     fi
 done
 
