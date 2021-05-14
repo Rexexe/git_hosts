@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ ! $1 ]; then
-    host_new=/tmp/host_new$$ #临时文件
-    ref_host=/etc/hosts      #目标hosts
+host_new=/tmp/host_new$$ #临时文件
+ref_host=/etc/hosts      #目标hosts
 
+if [ $1 ]; then
     sed '/#github/d' $ref_host >$host_new #删除目标hosts中标记的host，并复制到临时文件
 else
-    ref_host=./hosts
+    host_new=./hosts
     ref_host=./hosts
     echo "" > $ref_host
 fi
