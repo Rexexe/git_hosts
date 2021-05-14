@@ -10,6 +10,5 @@ jobs:
         id: commit
         run: |
           sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-          sudo echo "Asia/Shanghai" > /etc/timezone 
           echo $(date "+%z")
         continue-on-error: true
