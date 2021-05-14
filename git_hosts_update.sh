@@ -1,13 +1,18 @@
 #!/bin/bash
 
-host_new=/tmp/host_new$$ #临时文件
+host_tmp=/tmp/host_tmp$$ #临时文件
 ref_host=/etc/hosts      #目标hosts
 
 if [ ! $1 ]; then
-    sed '/#github/d' $ref_host >$host_new #删除目标hosts中标记的host，并复制到临时文件
+    sed '/#github/d' $ref_host | sed '/#|/d' >$host_tmp #删除目标hosts中标记的host，并复制到临时文件
 else
-    ref_host=./hosts
+    host_tmp=$1/hosts_tmp
+    ref_host=$1/hosts
 fi
+
+echo -e "#| GitHub Host Start\n" >>$host_tmp
+echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
+echo -e "#| Update at: $(date "+%Y-%m-%d %H:%M:%S")\n" >>$host_tmp
 
 ipAddressFooter=ipaddress.com
 githubUrls=(
@@ -17,30 +22,30 @@ githubUrls=(
     assets-cdn.github.com
     camo.githubusercontent.com
     github.map.fastly.net
-    github.global.ssl.fastly.net
-    gist.github.com
-    github.io
-    github.com
-    api.github.com
-    raw.githubusercontent.com
-    user-images.githubusercontent.com
-    favicons.githubusercontent.com
-    avatars5.githubusercontent.com
-    avatars4.githubusercontent.com
-    avatars3.githubusercontent.com
-    avatars2.githubusercontent.com
-    avatars1.githubusercontent.com
-    avatars0.githubusercontent.com
-    avatars.githubusercontent.com
-    codeload.github.com
-    github-cloud.s3.amazonaws.com
-    github-com.s3.amazonaws.com
-    github-production-release-asset-2e65be.s3.amazonaws.com
-    github-production-user-asset-6210df.s3.amazonaws.com
-    github-production-repository-file-5c1aeb.s3.amazonaws.com
-    githubstatus.com
-    github.community
-    media.githubusercontent.com
+    # github.global.ssl.fastly.net
+    # gist.github.com
+    # github.io
+    # github.com
+    # api.github.com
+    # raw.githubusercontent.com
+    # user-images.githubusercontent.com
+    # favicons.githubusercontent.com
+    # avatars5.githubusercontent.com
+    # avatars4.githubusercontent.com
+    # avatars3.githubusercontent.com
+    # avatars2.githubusercontent.com
+    # avatars1.githubusercontent.com
+    # avatars0.githubusercontent.com
+    # avatars.githubusercontent.com
+    # codeload.github.com
+    # github-cloud.s3.amazonaws.com
+    # github-com.s3.amazonaws.com
+    # github-production-release-asset-2e65be.s3.amazonaws.com
+    # github-production-user-asset-6210df.s3.amazonaws.com
+    # github-production-repository-file-5c1aeb.s3.amazonaws.com
+    # githubstatus.com
+    # github.community
+    # media.githubusercontent.com
 )
 
 resolveUrl() {
@@ -72,8 +77,11 @@ for i in ${githubUrls[@]}; do
     if [ ! $ip ]; then
         echo "$i is failed"
     else
-        printf "%-16s%-58s#github\n" $ip $i >>$host_new #格式化输出
+        printf "%-16s%-58s#github\n" $ip $i >>$host_tmp #格式化输出
     fi
 done
 
-/bin/cp -rf $host_new $ref_host #替换原hosts
+echo -e "\n#| GitHub Host End" >>$host_tmp
+
+/bin/cp -rf $host_tmp $ref_host #替换原hosts
+rm -r $host_tmp

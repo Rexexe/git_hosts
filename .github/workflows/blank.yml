@@ -8,6 +8,7 @@ jobs:
 
       - name: build-sh
         run: |
+          sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
           chmod +x ./git_hosts_update.sh
           chmod +x ./hosts
           ./git_hosts_update.sh build
@@ -15,9 +16,6 @@ jobs:
       - name: Commit
         id: commit
         run: |
-          ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-          echo "Asia/Shanghai" > /etc/timezone 
-          date "+%z"
           git config --global user.email Rexexe@git.com
           git config --global user.name Rexexe
           git add .
