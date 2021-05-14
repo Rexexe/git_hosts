@@ -4,4 +4,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: ./git_hosts_update.sh build
+      - run: ls
