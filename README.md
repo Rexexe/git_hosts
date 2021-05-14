@@ -67,4 +67,4 @@ ipconfig /flushdns
 
 这样就可以和最新的`hosts`保持同步。
 
-![switchhost-github.png](https://i.loli.net/2021/03/28/XnHW5xCEzel36fA.png)
+![switchhost-github.png](https://raw.githubusercontent.com/Rexexe/git_hosts/main/SwitchHosts!.jpg)
