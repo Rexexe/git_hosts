@@ -6,12 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: build-sh
-        run: |
-          chmod +x ./git_hosts_update.sh
-          chmod +x ./hosts
-          ./git_hosts_update.sh build
-
       - name: Commit
         id: commit
         run: |
