@@ -15,6 +15,9 @@ jobs:
       - name: Commit
         id: commit
         run: |
+          ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
+          echo "Asia/Shanghai" > /etc/timezone 
+          date "+%z"
           git config --global user.email Rexexe@git.com
           git config --global user.name Rexexe
           git add .
