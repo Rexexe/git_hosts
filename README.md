@@ -68,3 +68,8 @@ ipconfig /flushdns
 这样就可以和最新的`hosts`保持同步。
 
 ![switchhost-github.png](https://raw.githubusercontent.com/Rexexe/git_hosts/main/SwitchHosts!.jpg)
+
+
+## 参考仓库
+
+- [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
