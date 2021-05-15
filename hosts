@@ -1,7 +1,7 @@
 #| GitHub Host Start
 
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2021-05-15 18:06:05
+#| Update at: 2021-05-15 20:08:30
 
 185.199.108.154 github.githubassets.com                                   #github
 140.82.113.21   central.github.com                                        #github
@@ -10,9 +10,9 @@
 185.199.108.133 camo.githubusercontent.com                                #github
 185.199.108.133 github.map.fastly.net                                     #github
 199.232.69.194  github.global.ssl.fastly.net                              #github
-140.82.114.4    gist.github.com                                           #github
+140.82.113.4    gist.github.com                                           #github
 185.199.108.153 github.io                                                 #github
-140.82.114.4    github.com                                                #github
+140.82.112.4    github.com                                                #github
 140.82.113.6    api.github.com                                            #github
 185.199.108.133 raw.githubusercontent.com                                 #github
 185.199.108.133 user-images.githubusercontent.com                         #github
@@ -24,8 +24,8 @@
 185.199.108.133 avatars1.githubusercontent.com                            #github
 185.199.108.133 avatars0.githubusercontent.com                            #github
 185.199.108.133 avatars.githubusercontent.com                             #github
-140.82.114.10   codeload.github.com                                       #github
-52.217.47.36    github-cloud.s3.amazonaws.com                             #github
+140.82.113.10   codeload.github.com                                       #github
+52.217.50.12    github-cloud.s3.amazonaws.com                             #github
 52.216.136.188  github-com.s3.amazonaws.com                               #github
 52.217.132.73   github-production-release-asset-2e65be.s3.amazonaws.com   #github
 52.216.106.156  github-production-user-asset-6210df.s3.amazonaws.com      #github
