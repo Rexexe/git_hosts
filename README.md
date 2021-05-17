@@ -1,11 +1,8 @@
 # GitHub Hosts
 
-这个有什么用？最直观的效果是`GitHub`图片可以正常加载，网页也稳定了。
-
 `GitHub Hosts`主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
 
 - 主站: https://github.com/Rexexe/git_hosts
-
 
 ## 使用方式
 
