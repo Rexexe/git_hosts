@@ -63,22 +63,30 @@ resolveUrl() {
 findIp() {
     #获取目标ip
     url=$(resolveUrl $1)
-    ip=$(curl -s $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' -m 1)
-    echo $ip
+    ips=($(curl -s $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'))
+
+    if [ ${#ips[@]} == 0 ]; then
+        echo "$i is failed"
+    else
+        ips=($(awk -v RS=' ' '!a[$1]++' <<< ${ips[@]})) #过滤重复
+        setHosts "${ips[*]}" $1
+    fi
+}
+
+setHosts(){
+    #设置hosts
+    arr=$1
+    for ip in ${arr[*]}; do
+        printf "%-16s%-58s#github\n" $ip $2 >>$host_tmp #格式化输出
+    done
 }
 
 index=0
-for i in ${githubUrls[@]}; do
+for url in ${githubUrls[@]}; do
     let index++
 
-    echo "$index/${#githubUrls[@]}:$i"
-
-    ip=$(findIp $i)
-    if [ ! $ip ]; then
-        echo "$i is failed"
-    else
-        printf "%-16s%-58s#github\n" $ip $i >>$host_tmp #格式化输出
-    fi
+    echo "$index/${#githubUrls[@]}:$url"
+    findIp $url
 done
 
 echo -e "\n#| GitHub Host End" >>$host_tmp
