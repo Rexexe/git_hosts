@@ -68,7 +68,8 @@ findIp() {
     if [ ${#ips[@]} == 0 ]; then
         echo "$i is failed"
     else
-        ips=($(awk -v RS=' ' '!a[$1]++' <<< ${ips[@]})) #过滤重复
+        ips=($(echo ${ips[*]} | tr ' ' '\n' | sort -u | while read x ; do echo $x `ping -c 5 $x | grep 'min/avg/max/mdev' | awk -F / '{print $5}'` & done | sort -n -k 2 | awk '$2!="" {print $1}'))
+
         setHosts "${ips[*]}" $1
     fi
 }
