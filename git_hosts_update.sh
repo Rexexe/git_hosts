@@ -10,7 +10,7 @@ else
     ref_host=$1/hosts
 fi
 
-ping -c 3 baidu.com
+ping -c 5 140.82.113.4
 
 echo -e "#| GitHub Host Start\n" >>$host_tmp
 echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
