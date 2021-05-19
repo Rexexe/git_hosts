@@ -10,7 +10,7 @@ else
     ref_host=$1/hosts
 fi
 
-ping -c 5 140.82.113.4
+rm -r $host_tmp
 
 echo -e "#| GitHub Host Start\n" >>$host_tmp
 echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
@@ -70,7 +70,9 @@ findIp() {
     if [ ${#ips[@]} == 0 ]; then
         echo "$i is failed"
     else
-        ips=($(echo ${ips[*]} | tr ' ' '\n' | sort -u | while read x ; do echo $x `ping -c 3 $x | grep 'min/avg/max/mdev' | awk -F / '{print $5}'` & done | sort -n -k 2 | awk '$2!="" {print $1}'))
+        # github actions 不支持ping，取消测速
+        # ips=($(echo ${ips[*]} | tr ' ' '\n' | sort -u | while read x ; do echo $x `ping -c 3 $x | grep 'min/avg/max/mdev' | awk -F / '{print $5}'` & done | sort -n -k 2 | awk '$2!="" {print $1}'))
+        ips=($( echo ${ips[*]} | tr ' ' '\n' | sort -u ))
 
         setHosts "${ips[*]}" $1
     fi
