@@ -3,14 +3,14 @@
 host_tmp=/tmp/host_tmp$$ #临时文件
 ref_host=/etc/hosts      #目标hosts
 
+rm -r $host_tmp
+
 if [ ! $1 ]; then
     sed '/#github/d' $ref_host | sed '/#|/d' >$host_tmp #删除目标hosts中标记的host，并复制到临时文件
 else
     host_tmp=$1/hosts_tmp
     ref_host=$1/hosts
 fi
-
-rm -r $host_tmp
 
 echo -e "#| GitHub Host Start\n" >>$host_tmp
 echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
