@@ -6,7 +6,8 @@ ref_host=/etc/hosts      #目标hosts
 if [ ! $1 ]; then
     sed '/#github/d' $ref_host | sed '/#|/d' >$host_tmp #删除目标hosts中标记的host，并复制到临时文件
 else
-    ref_host=$1
+    host_tmp=$1/hosts_tmp
+    ref_host=$1/hosts
 fi
 
 rm -r $host_tmp
