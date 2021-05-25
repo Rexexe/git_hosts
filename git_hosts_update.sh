@@ -65,7 +65,7 @@ resolveUrl() {
 findIp() {
     #获取目标ip
     url=$(resolveUrl $1)
-    ips=($(curl -s $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'))
+    ips=($(curl -s -A 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0' $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'))
 
     if [ ${#ips[@]} == 0 ]; then
         echo "$i is failed"
