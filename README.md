@@ -4,6 +4,17 @@
 
 - 主站: https://github.com/Rexexe/git_hosts
 
+## 说明
+
+|  文件   | 说明  |
+|  ----  | ----  |
+| git_hosts_update.sh  | 查询当前服务器ip，某些地区可能会连接失败 |
+| hosts  | 官方服务器当前hosts集合 |
+| git_hosts.sh  | 指定测速全球数据中心，提取最快的服务器ip |
+| hosts_fast  | 当前最快hosts |
+
+推荐使用hosts_fast，或者自行运行git_hosts.sh
+
 ## 使用方式
 
 
@@ -17,9 +28,9 @@
 
 ##### 1：首先，打开 Mac 终端（command + 空格）。
 
-##### 2：使用cd命令跳转到 git_hosts_update.sh 所在目录。
+##### 2：使用cd命令跳转到 git_hosts.sh 所在目录。
 
-##### 3：直接使用命令 sudo ./git_hosts_update.sh
+##### 3：直接使用命令 sudo ./git_hosts.sh
 
 ##### 4：等待替换完成之后关闭终端。
 
@@ -59,14 +70,15 @@ ipconfig /flushdns
 
 - 方案名：GitHub（可以自行命名）
 - 类型：远程
-- URL 地址：https://cdn.jsdelivr.net/gh/Rexexe/git_hosts/hosts
+- URL 地址：https://cdn.jsdelivr.net/gh/Rexexe/git_hosts/hosts_fast
 - 自动更新：1个小时
 
 这样就可以和最新的`hosts`保持同步。
 
-![switchhost-github.png](https://raw.githubusercontent.com/Rexexe/git_hosts/main/SwitchHosts!.jpg)
+![switchhost-github.png](https://cdn.jsdelivr.net/gh/Rexexe/git_hosts/SwitchHosts!.png)
 
 
 ## 参考仓库
 
 - [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
+- [UsbEAm](https://github.com/dogfight360/UsbEAm)：UsbEAm backup source
