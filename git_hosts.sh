@@ -11,9 +11,9 @@ else
     ref_host=$1
 fi
 
-echo -e "#| GitHub Host Start\n" >>$host_tmp
+echo -e "#| GitHub Host Start" >>$host_tmp
 echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
-echo -e "#| Update at: $(date "+%Y-%m-%d %H:%M:%S")\n" >>$host_tmp
+echo -e "#| Update at: $(date "+%Y-%m-%d %H:%M:%S")" >>$host_tmp
 
 # gist.github.com
 gist=(192.30.255.119 192.30.255.118 203.98.7.65 59.24.3.173 8.7.198.45 52.74.223.119 13.229.188.59 140.82.114.20 192.30.253.119 140.82.113.19 13.250.177.223 192.30.253.118)
@@ -91,10 +91,7 @@ testIP "${codeload[*]}" codeload
 testIP "${amazonaws[*]}" amazonaws
 testIP "${raw[*]}" raw
 
-
-
-
-echo -e "\n#| GitHub Host End" >>$host_tmp
+echo -e "#| GitHub Host End" >>$host_tmp
 
 /bin/cp -rf $host_tmp $ref_host #替换原hosts
 rm -r $host_tmp

@@ -12,9 +12,9 @@ else
     ref_host=$1/hosts
 fi
 
-echo -e "#| GitHub Host Start\n" >>$host_tmp
+echo -e "#| GitHub Host Start" >>$host_tmp
 echo "#| Please Star : https://github.com/Rexexe/git_hosts" >>$host_tmp
-echo -e "#| Update at: $(date "+%Y-%m-%d %H:%M:%S")\n" >>$host_tmp
+echo -e "#| Update at: $(date "+%Y-%m-%d %H:%M:%S")" >>$host_tmp
 
 ipAddressFooter=ipaddress.com
 githubUrls=(
@@ -65,7 +65,7 @@ resolveUrl() {
 findIp() {
     #获取目标ip
     url=$(resolveUrl $1)
-    ips=($(curl -s -A 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0' $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'))
+    ips=($(wget -q -O - $url | grep -o -E 'https://www\.ipaddress\.com/ipv4/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'))
 
     if [ ${#ips[@]} == 0 ]; then
         echo "$i is failed"
@@ -94,7 +94,7 @@ for url in ${githubUrls[@]}; do
     findIp $url
 done
 
-echo -e "\n#| GitHub Host End" >>$host_tmp
+echo -e "#| GitHub Host End" >>$host_tmp
 
 /bin/cp -rf $host_tmp $ref_host #替换原hosts
 rm -r $host_tmp

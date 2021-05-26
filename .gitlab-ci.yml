@@ -1,5 +1,0 @@
-image: busybox
-
-test:
-  script:
-    - ping www.baidu.com
