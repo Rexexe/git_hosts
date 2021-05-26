@@ -1,0 +1,3 @@
+test:
+  script:
+    - ping www.baidu.com
