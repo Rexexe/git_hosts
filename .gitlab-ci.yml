@@ -7,10 +7,6 @@ variables:
 build:
   image: bash
   stage: build
-  only: 
-    - triggers
-    - web
-    - schedules
   after_script:
     # Go to the new directory
     - cd "${CI_COMMIT_SHA}"
