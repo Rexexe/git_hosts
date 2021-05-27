@@ -1,0 +1,40 @@
+stages:
+  - build
+
+variables:
+  GIT_VERSION: v2.30.1
+
+build:
+  image:
+    entrypoint: ['']
+    name: alpine/git:${GIT_VERSION}
+  stage: build
+  after_script:
+    # Go to the new directory
+    - cd "${CI_COMMIT_SHA}"
+
+    # Add all generated files to Git
+    - git add .
+
+    - |-
+      # Check if we have modifications to commit
+      CHANGES=$(git status --porcelain | wc -l)
+
+      if [ "$CHANGES" -gt "0" ]; then
+        # Commit all changes
+        git commit -m "Update hosts"
+
+        # Update the repository and make sure to skip the pipeline create for this commit
+        git push origin "${CI_DEFAULT_BRANCH}" -o ci.skip
+      fi
+  before_script:
+    - export
+    # Clone the repository via HTTPS inside a new directory
+    - git clone "http://${GITLAB_USERNAME}:${GITLAB_TOKEN}@${CI_SERVER_HOST}:${CI_SERVER_PORT}/${CI_PROJECT_PATH}.git" "${CI_COMMIT_SHA}"
+
+    # Set the displayed user with the commits that are about to be made
+    - git config --global user.email Rexexe@git.com
+    - git config --global user.name Rexexe
+  script:
+    - bash ./git_hosts_update.sh .
+    - cp -f hosts "${CI_COMMIT_SHA}"
