@@ -2,7 +2,7 @@ stages:
   - build
 
 build:
-  image: bash
+  image: bash:5.0
   stage: build
   after_script:
     # Go to the new directory
