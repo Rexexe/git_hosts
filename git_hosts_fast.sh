@@ -50,7 +50,7 @@ testIP() {
     #测速ip
     ips=$1
 
-    ips=($(echo ${ips[*]} | tr ' ' '\n' | sort -u | while read x; do echo $x $(ping -c 3 $x | grep 'min/avg/max/mdev' | awk -F / '{print $5}') & done | sort -n -k 2 | awk '$2!="" {print $1}'))
+    ips=($(echo ${ips[*]} | tr ' ' '\n' | sort -u | while read x; do echo $x $(ping -c 3 $x | grep 'min/avg/max' | awk -F = '{print $2}' | awk -F / '{print $2}') & done | sort -n -k 2 | awk '$2!="" {print $1}'))
 
     setHosts $ips $2
 }
