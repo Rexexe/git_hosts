@@ -32,5 +32,5 @@ build:
     - git config --global user.email Rexexe@git.com
     - git config --global user.name Rexexe
   script:
-    - bash "./git_hosts${TYPE}.sh ./hosts${TYPE}"
+    - bash "./git_hosts${TYPE}.sh" "./hosts${TYPE}"
     - cp -f hosts "${CI_COMMIT_SHA}"
