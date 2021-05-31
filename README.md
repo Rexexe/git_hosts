@@ -13,7 +13,7 @@
 | git_hosts.sh  | 指定测速全球数据中心，提取最快的服务器ip |
 | hosts_fast  | 当前最快hosts |
 
-推荐使用hosts_fast，或者自行运行git_hosts.sh
+推荐自行运行git_hosts.sh，因为hosts_fast是以我的网络为测试依据的，可能不适合其他人
 
 ## 使用方式
 
