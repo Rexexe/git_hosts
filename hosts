@@ -1,6 +1,6 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2021-06-13 09:07:45
+#| Update at: 2021-06-13 20:32:14
 185.199.108.154 github.githubassets.com                                   #github
 185.199.109.154 github.githubassets.com                                   #github
 185.199.110.154 github.githubassets.com                                   #github
@@ -23,13 +23,13 @@
 185.199.110.133 github.map.fastly.net                                     #github
 185.199.111.133 github.map.fastly.net                                     #github
 199.232.69.194  github.global.ssl.fastly.net                              #github
-140.82.112.3    gist.github.com                                           #github
+140.82.114.4    gist.github.com                                           #github
 185.199.108.153 github.io                                                 #github
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.113.3    github.com                                                #github
-140.82.112.6    api.github.com                                            #github
+140.82.112.3    github.com                                                #github
+140.82.112.5    api.github.com                                            #github
 185.199.108.133 raw.githubusercontent.com                                 #github
 185.199.109.133 raw.githubusercontent.com                                 #github
 185.199.110.133 raw.githubusercontent.com                                 #github
@@ -70,8 +70,8 @@
 185.199.109.133 avatars.githubusercontent.com                             #github
 185.199.110.133 avatars.githubusercontent.com                             #github
 185.199.111.133 avatars.githubusercontent.com                             #github
-140.82.113.10   codeload.github.com                                       #github
-52.217.103.180  github-cloud.s3.amazonaws.com                             #github
+140.82.113.9    codeload.github.com                                       #github
+52.216.152.148  github-cloud.s3.amazonaws.com                             #github
 52.216.171.107  github-com.s3.amazonaws.com                               #github
 52.216.114.243  github-production-release-asset-2e65be.s3.amazonaws.com   #github
 52.217.161.17   github-production-user-asset-6210df.s3.amazonaws.com      #github
