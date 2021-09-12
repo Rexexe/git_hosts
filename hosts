@@ -1,6 +1,6 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2021-09-12 09:10:03
+#| Update at: 2021-09-12 20:31:48
 185.199.108.154 github.githubassets.com                                   #github
 185.199.109.154 github.githubassets.com                                   #github
 185.199.110.154 github.githubassets.com                                   #github
@@ -28,8 +28,8 @@
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.112.4    github.com                                                #github
-140.82.113.5    api.github.com                                            #github
+140.82.112.3    github.com                                                #github
+140.82.112.5    api.github.com                                            #github
 185.199.108.133 raw.githubusercontent.com                                 #github
 185.199.109.133 raw.githubusercontent.com                                 #github
 185.199.110.133 raw.githubusercontent.com                                 #github
@@ -71,9 +71,9 @@
 185.199.110.133 avatars.githubusercontent.com                             #github
 185.199.111.133 avatars.githubusercontent.com                             #github
 140.82.114.10   codeload.github.com                                       #github
-52.217.39.236   github-cloud.s3.amazonaws.com                             #github
+52.216.170.11   github-cloud.s3.amazonaws.com                             #github
 52.217.70.132   github-com.s3.amazonaws.com                               #github
-52.217.135.41   github-production-release-asset-2e65be.s3.amazonaws.com   #github
+52.217.198.65   github-production-release-asset-2e65be.s3.amazonaws.com   #github
 52.217.139.201  github-production-user-asset-6210df.s3.amazonaws.com      #github
 52.217.202.233  github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 185.199.108.153 githubstatus.com                                          #github
