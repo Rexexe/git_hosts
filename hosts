@@ -1,6 +1,6 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2021-12-15 09:11:48
+#| Update at: 2021-12-15 20:35:16
 185.199.108.154 github.githubassets.com                                   #github
 185.199.109.154 github.githubassets.com                                   #github
 185.199.110.154 github.githubassets.com                                   #github
@@ -23,12 +23,12 @@
 185.199.110.133 github.map.fastly.net                                     #github
 185.199.111.133 github.map.fastly.net                                     #github
 199.232.69.194  github.global.ssl.fastly.net                              #github
-140.82.113.4    gist.github.com                                           #github
+140.82.112.4    gist.github.com                                           #github
 185.199.108.153 github.io                                                 #github
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.113.4    github.com                                                #github
+140.82.112.4    github.com                                                #github
 140.82.114.6    api.github.com                                            #github
 185.199.108.133 raw.githubusercontent.com                                 #github
 185.199.109.133 raw.githubusercontent.com                                 #github
@@ -71,7 +71,7 @@
 185.199.110.133 avatars.githubusercontent.com                             #github
 185.199.111.133 avatars.githubusercontent.com                             #github
 140.82.112.9    codeload.github.com                                       #github
-52.217.163.49   github-cloud.s3.amazonaws.com                             #github
+52.216.128.115  github-cloud.s3.amazonaws.com                             #github
 52.217.172.41   github-com.s3.amazonaws.com                               #github
 52.216.28.148   github-production-release-asset-2e65be.s3.amazonaws.com   #github
 52.216.152.124  github-production-user-asset-6210df.s3.amazonaws.com      #github
