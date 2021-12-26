@@ -1,6 +1,6 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2021-12-25 20:34:32
+#| Update at: 2021-12-26 09:18:21
 185.199.108.154 github.githubassets.com                                   #github
 185.199.109.154 github.githubassets.com                                   #github
 185.199.110.154 github.githubassets.com                                   #github
@@ -28,8 +28,8 @@
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.113.3    github.com                                                #github
-140.82.112.6    api.github.com                                            #github
+140.82.114.4    github.com                                                #github
+140.82.113.5    api.github.com                                            #github
 185.199.108.133 raw.githubusercontent.com                                 #github
 185.199.109.133 raw.githubusercontent.com                                 #github
 185.199.110.133 raw.githubusercontent.com                                 #github
@@ -71,7 +71,7 @@
 185.199.110.133 avatars.githubusercontent.com                             #github
 185.199.111.133 avatars.githubusercontent.com                             #github
 140.82.114.9    codeload.github.com                                       #github
-52.216.82.176   github-cloud.s3.amazonaws.com                             #github
+52.217.162.129  github-cloud.s3.amazonaws.com                             #github
 52.216.142.76   github-com.s3.amazonaws.com                               #github
 52.216.22.19    github-production-release-asset-2e65be.s3.amazonaws.com   #github
 52.217.169.137  github-production-user-asset-6210df.s3.amazonaws.com      #github
