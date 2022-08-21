@@ -1,8 +1,8 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2022-08-20 20:40:17
-140.82.112.4    central.github.com                                        #github
-140.82.112.4    assets-cdn.github.com                                     #github
+#| Update at: 2022-08-21 10:24:16
+140.82.113.4    central.github.com                                        #github
+140.82.113.4    assets-cdn.github.com                                     #github
 151.101.1.6     github.map.fastly.net                                     #github
 151.101.129.6   github.map.fastly.net                                     #github
 151.101.193.6   github.map.fastly.net                                     #github
@@ -11,14 +11,14 @@
 151.101.129.6   github.global.ssl.fastly.net                              #github
 151.101.193.6   github.global.ssl.fastly.net                              #github
 151.101.65.6    github.global.ssl.fastly.net                              #github
-140.82.112.4    gist.github.com                                           #github
+140.82.113.4    gist.github.com                                           #github
 185.199.108.153 github.io                                                 #github
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.112.4    github.com                                                #github
-140.82.112.4    api.github.com                                            #github
-140.82.112.4    codeload.github.com                                       #github
+140.82.113.4    github.com                                                #github
+140.82.113.4    api.github.com                                            #github
+140.82.113.4    codeload.github.com                                       #github
 207.171.166.22  github-cloud.s3.amazonaws.com                             #github
 72.21.206.80    github-cloud.s3.amazonaws.com                             #github
 72.21.210.29    github-cloud.s3.amazonaws.com                             #github
