@@ -1,12 +1,8 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2022-11-04 20:50:48
-128.199.208.193 github.githubassets.com                                   #github
-128.199.208.193 central.github.com                                        #github
-140.82.114.4    central.github.com                                        #github
-128.199.208.193 desktop.githubusercontent.com                             #github
-128.199.208.193 assets-cdn.github.com                                     #github
-140.82.114.4    assets-cdn.github.com                                     #github
+#| Update at: 2022-11-05 10:10:28
+140.82.113.4    central.github.com                                        #github
+140.82.113.4    assets-cdn.github.com                                     #github
 151.101.1.6     github.map.fastly.net                                     #github
 151.101.129.6   github.map.fastly.net                                     #github
 151.101.193.6   github.map.fastly.net                                     #github
@@ -15,26 +11,46 @@
 151.101.129.6   github.global.ssl.fastly.net                              #github
 151.101.193.6   github.global.ssl.fastly.net                              #github
 151.101.65.6    github.global.ssl.fastly.net                              #github
-140.82.114.4    gist.github.com                                           #github
+140.82.113.4    gist.github.com                                           #github
+192.0.0.2       gist.github.com                                           #github
 185.199.108.153 github.io                                                 #github
 185.199.109.153 github.io                                                 #github
 185.199.110.153 github.io                                                 #github
 185.199.111.153 github.io                                                 #github
-140.82.114.4    github.com                                                #github
-140.82.114.4    api.github.com                                            #github
-140.82.114.4    codeload.github.com                                       #github
+192.0.0.2       github.io                                                 #github
+140.82.113.4    github.com                                                #github
+192.0.0.2       github.com                                                #github
+140.82.113.4    api.github.com                                            #github
+192.0.0.2       api.github.com                                            #github
+192.0.0.2       raw.githubusercontent.com                                 #github
+192.0.0.2       user-images.githubusercontent.com                         #github
+192.0.0.2       favicons.githubusercontent.com                            #github
+192.0.0.2       avatars5.githubusercontent.com                            #github
+192.0.0.2       avatars4.githubusercontent.com                            #github
+192.0.0.2       avatars3.githubusercontent.com                            #github
+192.0.0.2       avatars2.githubusercontent.com                            #github
+192.0.0.2       avatars1.githubusercontent.com                            #github
+192.0.0.2       avatars0.githubusercontent.com                            #github
+192.0.0.2       avatars.githubusercontent.com                             #github
+140.82.113.4    codeload.github.com                                       #github
+192.0.0.2       codeload.github.com                                       #github
+192.0.0.2       github-cloud.s3.amazonaws.com                             #github
 207.171.166.22  github-cloud.s3.amazonaws.com                             #github
 72.21.206.80    github-cloud.s3.amazonaws.com                             #github
 72.21.210.29    github-cloud.s3.amazonaws.com                             #github
+192.0.0.2       github-com.s3.amazonaws.com                               #github
 207.171.166.22  github-com.s3.amazonaws.com                               #github
 72.21.206.80    github-com.s3.amazonaws.com                               #github
 72.21.210.29    github-com.s3.amazonaws.com                               #github
+192.0.0.2       github-production-release-asset-2e65be.s3.amazonaws.com   #github
 207.171.166.22  github-production-release-asset-2e65be.s3.amazonaws.com   #github
 72.21.206.80    github-production-release-asset-2e65be.s3.amazonaws.com   #github
 72.21.210.29    github-production-release-asset-2e65be.s3.amazonaws.com   #github
+192.0.0.2       github-production-user-asset-6210df.s3.amazonaws.com      #github
 207.171.166.22  github-production-user-asset-6210df.s3.amazonaws.com      #github
 72.21.206.80    github-production-user-asset-6210df.s3.amazonaws.com      #github
 72.21.210.29    github-production-user-asset-6210df.s3.amazonaws.com      #github
+192.0.0.2       github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 207.171.166.22  github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 72.21.206.80    github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 72.21.210.29    github-production-repository-file-5c1aeb.s3.amazonaws.com #github
@@ -42,5 +58,8 @@
 185.199.109.153 githubstatus.com                                          #github
 185.199.110.153 githubstatus.com                                          #github
 185.199.111.153 githubstatus.com                                          #github
+192.0.0.2       githubstatus.com                                          #github
 140.82.113.18   github.community                                          #github
+192.0.0.2       github.community                                          #github
+192.0.0.2       media.githubusercontent.com                               #github
 #| GitHub Host End
