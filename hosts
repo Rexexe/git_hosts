@@ -1,6 +1,6 @@
 #| GitHub Host Start
 #| Please Star : https://github.com/Rexexe/git_hosts
-#| Update at: 2022-12-14 20:39:16
+#| Update at: 2022-12-15 09:47:13
 140.82.112.3    central.github.com                                        #github
 140.82.112.3    assets-cdn.github.com                                     #github
 151.101.1.6     github.map.fastly.net                                     #github
@@ -34,5 +34,9 @@
 207.171.166.22  github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 72.21.206.80    github-production-repository-file-5c1aeb.s3.amazonaws.com #github
 72.21.210.29    github-production-repository-file-5c1aeb.s3.amazonaws.com #github
+185.199.108.153 githubstatus.com                                          #github
+185.199.109.153 githubstatus.com                                          #github
+185.199.110.153 githubstatus.com                                          #github
+185.199.111.153 githubstatus.com                                          #github
 140.82.114.17   github.community                                          #github
 #| GitHub Host End
